@@ -5,4 +5,14 @@
 
 nav {
     border: 1px solid red;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 72px;
+    padding-left: 30px;
 }
