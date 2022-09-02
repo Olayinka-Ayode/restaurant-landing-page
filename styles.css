@@ -3,11 +3,16 @@
     padding: 0;
 }
 
+body {
+    background-image: url('https://ae01.alicdn.com/kf/Hbc3780e6a84849968d0b3c5b440ecf79W/Custom-photo-3d-wallpaper-Cartoon-super-burger-king-tv-background-living-room-decor-3d-wall-murals.jpg');
+}
+
 nav {
     border: 1px solid red;
     display: flex;
     align-items: center;
     text-align: center;
+    background-color: black;
 }
 
 h1 {
@@ -18,5 +23,12 @@ h1 {
 }
 
 ul {
-    
+    list-style: none;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    background-image: none;
 }
