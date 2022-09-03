@@ -1,34 +1,74 @@
 * {
     margin: 0;
     padding: 0;
+    transition: all 300ms ease;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 32px;
 }
 
 body {
-    background-image: url('https://ae01.alicdn.com/kf/Hbc3780e6a84849968d0b3c5b440ecf79W/Custom-photo-3d-wallpaper-Cartoon-super-burger-king-tv-background-living-room-decor-3d-wall-murals.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp2186059.jpg');
+    background-repeat: no-repeat;
 }
 
 nav {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: black;
+    background-color: white;
+    justify-content: space-between;
 }
 
 h1 {
     font-weight: 700;
-    font-family: 'Qwitcher Grypen', cursive;
     font-size: 72px;
     padding-left: 30px;
+    animation: animateName 800ms 200ms backwards;
 }
 
 ul {
     list-style: none;
-    padding-left: 50px;
+    padding: 0 50px;
     display: flex;
-    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    padding-left: 150px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 img {
-    background-image: none;
+    animation: animateLogo 800ms 200ms backwards;
 }
+
+@keyframes animateLogo {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+    @keyframes animateName {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
