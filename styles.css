@@ -40,7 +40,7 @@ a {
     transition: all 300ms ease;
 }
 
-li {
+.li {
     padding-left: 150px;
 }
 
@@ -87,10 +87,17 @@ nav a:hover {
 
 nav ul ul {
     position: absolute;
-    top: 60px;
+    bottom: 300px;
+    right: 280px;
+    margin-top: 15px;
     display: none;
+    background-color: white;
+    padding: 0;
+    float: right;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid black;
 }
-
-nav ul li:hover > ul {
+li:hover > ul {
     display: block;
 }
