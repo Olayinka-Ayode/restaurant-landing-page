@@ -5,10 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make A Burger!</title>
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <a href="./index.html"><img src="../images/Burger Website icon.png" alt="Company Logo"></a>
     </nav>
+    <main>
+        <form action="submit" method="post">
+            <h1>Make A Burger</h1>
+            <label for="protein">Protein?</label>
+            <select name="protein" id="protein">
+                <option value="Ham">Ham</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Beef">Beef</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Bacon">Bacon</option>
+            </select>
+            <h1>Add your favourite liquids</h1>
+            <label for="Cheese">Cheese</label>
+            <input type="checkbox" name="Cheese" id="add" checked>
+            <label for="Mustard">Mustard</label>
+            <input type="checkbox" name="Mustard" id="add">
+            <label for="Ketchup">Ketchup</label>
+            <input type="checkbox" name="Ketchup" id="add">
+            <label for="X-Cheese">Extra Cheese</label>
+            <input type="checkbox" name="X-Cheese" id="add">
+            <label for="Mayonnaise">Mayonnaise</label>
+            <input type="checkbox" name="Mayonnaise" id="add">
+            <h1>Add your favourite vegetables</h1>
+            <label for="Onions">Onions</label>
+            <input type="checkbox" name="Onions" id="add">
+            <label for="Garlic">Garlic</label>
+            <input type="checkbox" name="Garlic" id="add">
+            <label for="Lettuce">Lettuce</label>
+            <input type="checkbox" name="Lettuce" id="add" checked disabled>
+            <label for="Pickles">Pickles</label>
+            <input type="checkbox" name="Pickles" id="add">
+            <label for="Tomatoes">Tomatoes</label>
+            <input type="checkbox" name="Tomatoes" id="add" checked disabled>
+            <label for="Chili">Chili</label>
+            <input type="checkbox" name="Chili" id="add">
+            <label for="Mushroom">Mushroom</label>
+            <input type="checkbox" name="Mushroom" id="add">
+            <button type="submit">Order Now</button>
+        </form>
+    </main>
 </body>
 </html>
